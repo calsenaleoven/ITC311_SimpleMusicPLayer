@@ -1,0 +1,202 @@
+CRITICAL - 2023-09-23 11:50:40 --> Undefined variable $playlists
+in APPPATH\Views\music.php on line 102.
+ 1 APPPATH\Views\music.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $playlists', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 102)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('music')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-23 11:51:12 --> Undefined variable $playlists
+in APPPATH\Views\music.php on line 102.
+ 1 APPPATH\Views\music.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $playlists', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 102)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('music')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-23 11:55:25 --> Undefined property: App\Controllers\Home::$playlistModel
+in APPPATH\Controllers\Home.php on line 10.
+ 1 APPPATH\Controllers\Home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$playlistModel', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Controllers\\Home.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-23 11:57:29 --> Constant expression contains invalid operations
+in APPPATH\Models\PlaylistModel.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-23 12:00:36 --> Constant expression contains invalid operations
+in APPPATH\Models\PlaylistModel.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-23 12:03:11 --> Constant expression contains invalid operations
+in APPPATH\Models\PlaylistModel.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-23 12:05:11 --> Constant expression contains invalid operations
+in APPPATH\Models\PlaylistModel.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-23 12:05:14 --> Constant expression contains invalid operations
+in APPPATH\Models\PlaylistModel.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-23 12:05:37 --> Undefined property: App\Controllers\Home::$playlistModel
+in APPPATH\Controllers\Home.php on line 12.
+ 1 APPPATH\Controllers\Home.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$playlistModel', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Controllers\\Home.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-23 12:05:56 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\music.php on line 129.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('music')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-23 12:06:29 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\music.php on line 129.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('music')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-23 12:06:54 --> Undefined variable $playlists
+in APPPATH\Views\music.php on line 102.
+ 1 APPPATH\Views\music.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $playlists', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 102)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('music')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-23 12:07:23 --> Undefined variable $playlists
+in APPPATH\Views\music.php on line 102.
+ 1 APPPATH\Views\music.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $playlists', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 102)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('music')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-23 12:09:54 --> Constant expression contains invalid operations
+in APPPATH\Models\MusicModel.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-23 12:10:59 --> Constant expression contains invalid operations
+in APPPATH\Models\MusicModel.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-23 12:12:00 --> Constant expression contains invalid operations
+in APPPATH\Models\MusicModel.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-23 12:13:30 --> Constant expression contains invalid operations
+in APPPATH\Models\PlaylistModel.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-23 12:14:00 --> Constant expression contains invalid operations
+in APPPATH\Models\PlaylistMusicModel.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-23 12:14:31 --> Undefined variable $music
+in APPPATH\Views\music.php on line 111.
+ 1 APPPATH\Views\music.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $music', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 111)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(21): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-23 12:20:20 --> Undefined variable $music
+in APPPATH\Views\music.php on line 111.
+ 1 APPPATH\Views\music.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $music', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 111)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(22): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-23 12:20:30 --> Undefined variable $music
+in APPPATH\Views\music.php on line 111.
+ 1 APPPATH\Views\music.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $music', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 111)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(22): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-23 12:24:00 --> syntax error, unexpected token "private", expecting end of file
+in APPPATH\Views\music.php on line 112.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 3 APPPATH\Controllers\MusicController.php(22): view('music', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-23 12:24:30 --> syntax error, unexpected token "private", expecting end of file
+in APPPATH\Views\music.php on line 111.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 3 APPPATH\Controllers\MusicController.php(22): view('music', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-23 12:28:49 --> Undefined variable $music
+in APPPATH\Views\music.php on line 157.
+ 1 APPPATH\Views\music.php(157): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $music', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 157)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(22): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-23 12:40:50 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 768.
+ 1 SYSTEMPATH\BaseModel.php(768): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\MusicController.php(49): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->uploadMusic()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-23 12:41:32 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 768.
+ 1 SYSTEMPATH\BaseModel.php(768): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\MusicController.php(49): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->uploadMusic()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')

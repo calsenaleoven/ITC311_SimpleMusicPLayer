@@ -1,0 +1,20 @@
+CRITICAL - 2023-09-24 05:25:34 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 768.
+ 1 SYSTEMPATH\BaseModel.php(768): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\MusicController.php(49): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->uploadMusic()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-24 05:39:32 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 768.
+ 1 SYSTEMPATH\BaseModel.php(768): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\MusicController.php(49): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->uploadMusic()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
