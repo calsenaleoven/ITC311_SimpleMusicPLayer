@@ -1,0 +1,1052 @@
+CRITICAL - 2023-09-27 01:00:34 --> Undefined variable $audiosInPlaylist
+in APPPATH\Views\music.php on line 154.
+ 1 APPPATH\Views\music.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $audiosInPlaylist', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 154)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(24): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:04:50 --> Undefined array key "audios"
+in APPPATH\Views\music.php on line 155.
+ 1 APPPATH\Views\music.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "audios"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 155)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(37): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:05:38 --> Undefined array key "music"
+in APPPATH\Views\music.php on line 155.
+ 1 APPPATH\Views\music.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "music"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 155)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(37): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:06:03 --> Undefined array key "audios"
+in APPPATH\Views\music.php on line 155.
+ 1 APPPATH\Views\music.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "audios"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 155)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(37): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:08:24 --> Undefined variable $playlistData
+in APPPATH\Controllers\MusicController.php on line 37.
+ 1 APPPATH\Controllers\MusicController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $playlistData', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Controllers\\MusicController.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:09:11 --> Undefined variable $audiosData
+in APPPATH\Controllers\MusicController.php on line 37.
+ 1 APPPATH\Controllers\MusicController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $audiosData', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Controllers\\MusicController.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:12:27 --> Undefined array key "title"
+in APPPATH\Views\music.php on line 158.
+ 1 APPPATH\Views\music.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "title"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 158)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(40): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:18:00 --> Undefined array key "music"
+in APPPATH\Views\music.php on line 158.
+ 1 APPPATH\Views\music.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "music"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 158)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(40): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:19:12 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\MusicController.php on line 26.
+ 1 APPPATH\Controllers\MusicController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Controllers\\MusicController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:21:54 --> syntax error, unexpected token ",", expecting "]"
+in APPPATH\Controllers\MusicController.php on line 26.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Controllers\\MusicController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\MusicController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\MusicController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\MusicController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:23:18 --> Undefined variable $music
+in APPPATH\Views\music.php on line 113.
+ 1 APPPATH\Views\music.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $music', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 113)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(36): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:24:03 --> Undefined variable $music
+in APPPATH\Views\music.php on line 114.
+ 1 APPPATH\Views\music.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $music', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 114)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(36): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:24:36 --> Undefined variable $musicData
+in APPPATH\Controllers\MusicController.php on line 25.
+ 1 APPPATH\Controllers\MusicController.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $musicData', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Controllers\\MusicController.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:25:30 --> Undefined constant "App\Controllers\this"
+in APPPATH\Controllers\MusicController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:26:14 --> Undefined constant "App\Controllers\this"
+in APPPATH\Controllers\MusicController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:26:30 --> Undefined variable $music
+in APPPATH\Views\music.php on line 114.
+ 1 APPPATH\Views\music.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $music', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 114)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(38): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:27:03 --> Undefined variable $music
+in APPPATH\Views\music.php on line 114.
+ 1 APPPATH\Views\music.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $music', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 114)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(38): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:27:59 --> Undefined array key "title"
+in APPPATH\Views\music.php on line 160.
+ 1 APPPATH\Views\music.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "title"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 160)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(38): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:28:51 --> Undefined array key "id"
+in APPPATH\Controllers\MusicController.php on line 28.
+ 1 APPPATH\Controllers\MusicController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Controllers\\MusicController.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:29:16 --> Undefined array key "title"
+in APPPATH\Views\music.php on line 160.
+ 1 APPPATH\Views\music.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "title"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 160)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(38): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:31:07 --> Undefined array key "artist"
+in APPPATH\Views\music.php on line 161.
+ 1 APPPATH\Views\music.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "artist"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 161)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(38): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:32:07 --> Undefined array key "title"
+in APPPATH\Views\music.php on line 161.
+ 1 APPPATH\Views\music.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "title"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 161)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(38): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:32:55 --> Undefined array key "id"
+in APPPATH\Controllers\MusicController.php on line 28.
+ 1 APPPATH\Controllers\MusicController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Controllers\\MusicController.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:33:32 --> Undefined array key "id"
+in APPPATH\Controllers\MusicController.php on line 28.
+ 1 APPPATH\Controllers\MusicController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Controllers\\MusicController.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:34:18 --> Undefined array key "title"
+in APPPATH\Controllers\MusicController.php on line 28.
+ 1 APPPATH\Controllers\MusicController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "title"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Controllers\\MusicController.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:35:02 --> Undefined variable $playlist_music
+in APPPATH\Controllers\MusicController.php on line 28.
+ 1 APPPATH\Controllers\MusicController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $playlist_music', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Controllers\\MusicController.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:35:15 --> Undefined array key "title"
+in APPPATH\Views\music.php on line 161.
+ 1 APPPATH\Views\music.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "title"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 161)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(38): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:37:49 --> Undefined array key "title"
+in APPPATH\Views\music.php on line 161.
+ 1 APPPATH\Views\music.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "title"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 161)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(38): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:47:54 --> Undefined array key "title"
+in APPPATH\Views\music.php on line 161.
+ 1 APPPATH\Views\music.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "title"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 161)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(38): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 01:49:40 --> Undefined array key "artist"
+in APPPATH\Views\music.php on line 162.
+ 1 APPPATH\Views\music.php(162): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "artist"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 162)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(38): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 02:00:47 --> Undefined variable $playlist
+in APPPATH\Controllers\MusicController.php on line 26.
+ 1 APPPATH\Controllers\MusicController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $playlist', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Controllers\\MusicController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 02:30:26 --> Undefined variable $playlists
+in APPPATH\Views\music.php on line 138.
+ 1 APPPATH\Views\music.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $playlists', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 138)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(167): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->searchMusic()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 02:43:40 --> Invalid file: "/.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/', [], true)
+ 3 APPPATH\Controllers\MusicController.php(167): view('/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->searchMusic()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 02:43:58 --> Invalid file: "/.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/', [], true)
+ 3 APPPATH\Controllers\MusicController.php(167): view('/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->searchMusic()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 02:44:34 --> Invalid file: "/.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/', [], true)
+ 3 APPPATH\Controllers\MusicController.php(167): view('/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->searchMusic()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 02:51:21 --> array_merge(): Argument #2 must be of type array, string given
+in APPPATH\Controllers\MusicController.php on line 170.
+ 1 APPPATH\Controllers\MusicController.php(170): array_merge([...], '<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Music Player</h1>
+
+        <!-- Upload Music Button -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uploadMusicModal">
+            Upload Music
+        </button>
+
+        <!-- Modal for Uploading Music -->
+        <div class="modal fade" id="uploadMusicModal" tabindex="-1" role="dialog" aria-labelledby="uploadMusicModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="uploadMusicModalLabel">Upload Music</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Music Upload Form -->
+                        <form action="music/uploadMusic" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="title">Title:</label>
+                                <input type="text" class="form-control" id="title" name="title" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="artist">Artist:</label>
+                                <input type="text" class="form-control" id="artist" name="artist" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="file_path">Select Music File:</label>
+                                <input type="file" class="form-control" id="music_path" name="music_path" accept=".mp3" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Upload</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Playlist Button -->
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#createPlaylistModal">
+            Create Playlist
+        </button>
+
+        <!-- Modal for Creating Playlist -->
+        <div class="modal fade" id="createPlaylistModal" tabindex="-1" role="dialog" aria-labelledby="createPlaylistModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="createPlaylistModalLabel">Create Playlist</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Playlist Creation Form -->
+                        <form action="music/createPlaylist" method="post">
+                            <div class="form-group">
+                                <label for="playlistName">Playlist Name:</label>
+                                <input type="text" class="form-control" id="playlistName" name="playlistName" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Create Playlist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Music to Playlist Button -->
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#addMusicToPlaylistModal">
+            Add Music to Playlist
+        </button>
+
+        <!-- Modal for Adding Music to Playlist -->
+        <div class="modal fade" id="addMusicToPlaylistModal" tabindex="-1" role="dialog" aria-labelledby="addMusicToPlaylistModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addMusicToPlaylistModalLabel">Add Music to Playlist</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Form for Adding Music to Playlist -->
+                        <form action="music/addMusicToPlaylist" method="post">
+                            <div class="form-group">
+                                <label for="playlistId">Select Playlist:</label>
+                                <select class="form-control" id="playlistId" name="playlistId" required>
+                                    <!-- Populate this with playlist options -->
+                                                                                                                <option value="1">Wasak</option>
+                                                                            <option value="2">Wasak_2</option>
+                                                                            <option value="3">Wasak_3</option>
+                                                                            <option value="4">Wasak_4</option>
+                                                                            <option value="5">Sayawan</option>
+                                                                            <option value="6">Sayawan_2</option>
+                                                                                                        </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="musicId">Select Music:</label>
+                                <select class="form-control" id="musicId" name="musicId" required>
+                                    <!-- Populate this with music options -->
+                                                                        </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Add to Playlist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Playlists Table -->
+<table border="2">
+    <thead>
+        <tr>
+            <th>Playlist Name</th>
+            <th>Audio Title</th>
+            <th>Audio Artist</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+                                                                                                            <tr>
+                                <td>Wasak</td>
+                                <td class="music-title">Roar</td>
+                                <td class="music-artist">Katy Perry</td>
+                                <td>
+                                    <button class="btn btn-primary playButton" data-src="http://localhost:8080/uploads/1695693943_27618ed287c022ffa8b2.mp3">Play</button>
+                                    <a href="delete_music.php?id=1" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                                                                                                <tr>
+                                <td>Wasak</td>
+                                <td class="music-title">Best Day of My Life</td>
+                                <td class="music-artist">American Authors</td>
+                                <td>
+                                    <button class="btn btn-primary playButton" data-src="http://localhost:8080/uploads/1695694067_5197eecb12c072f87320.mp3">Play</button>
+                                    <a href="delete_music.php?id=2" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <tr>
+                                <td>Wasak_2</td>
+                                <td class="music-title">Roar</td>
+                                <td class="music-artist">Katy Perry</td>
+                                <td>
+                                    <button class="btn btn-primary playButton" data-src="http://localhost:8080/uploads/1695693943_27618ed287c022ffa8b2.mp3">Play</button>
+                                    <a href="delete_music.php?id=1" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                                                                                                <tr>
+                                <td>Wasak_2</td>
+                                <td class="music-title">Best Day of My Life</td>
+                                <td class="music-artist">American Authors</td>
+                                <td>
+                                    <button class="btn btn-primary playButton" data-src="http://localhost:8080/uploads/1695694067_5197eecb12c072f87320.mp3">Play</button>
+                                    <a href="delete_music.php?id=2" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <tr>
+                                <td>Wasak_3</td>
+                                <td class="music-title">Count On Me</td>
+                                <td class="music-artist">Bruno Mars</td>
+                                <td>
+                                    <button class="btn btn-primary playButton" data-src="http://localhost:8080/uploads/1695694154_dd5dba58fadfa05f86a5.mp3">Play</button>
+                                    <a href="delete_music.php?id=3" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                                                                                                <tr>
+                                <td>Wasak_3</td>
+                                <td class="music-title">Best Day of My Life</td>
+                                <td class="music-artist">American Authors</td>
+                                <td>
+                                    <button class="btn btn-primary playButton" data-src="http://localhost:8080/uploads/1695694067_5197eecb12c072f87320.mp3">Play</button>
+                                    <a href="delete_music.php?id=2" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <tr>
+                                <td>Wasak_4</td>
+                                <td class="music-title">Hall of Fame</td>
+                                <td class="music-artist">The Script</td>
+                                <td>
+                                    <button class="btn btn-primary playButton" data-src="http://localhost:8080/uploads/1695694268_07403fdf15f3ab181a5e.mp3">Play</button>
+                                    <a href="delete_music.php?id=4" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <tr>
+                                <td>Sayawan</td>
+                                <td class="music-title">Happy</td>
+                                <td class="music-artist">Pharrell Williams</td>
+                                <td>
+                                    <button class="btn btn-primary playButton" data-src="http://localhost:8080/uploads/1695695492_70ac9e0b02c71f94565c.mp3">Play</button>
+                                    <a href="delete_music.php?id=5" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </tbody>
+</table>
+
+
+
+
+
+
+        <!-- Search Music Form -->
+        <form action="/music/searchMusic" method="post">
+            <div class="form-group">
+                <label for="searchTerm">Search Music:</label>
+                <input type="text" class="form-control" id="searchTerm" name="searchTerm" placeholder="Enter title or artist">
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+
+        <!-- Display Search Results -->
+        
+        <!-- Audio Player -->
+        <div>
+            <p>Now Playing:</p>
+            <p><span id="currentTitle"></span> by <span id="currentArtist"></span></p>
+            <audio id="audioPlayer" controls>
+                <source src="" type="audio/mpeg" id="audioSource">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <script>
+            // JavaScript to handle audio playback
+            const audioPlayer = document.getElementById(\'audioPlayer\');
+            const audioSource = document.getElementById(\'audioSource\');
+            const playButtons = document.querySelectorAll(\'.playButton\');
+            const currentTitle = document.getElementById(\'currentTitle\');
+            const currentArtist = document.getElementById(\'currentArtist\');
+
+            playButtons.forEach(button => {
+            button.addEventListener(\'click\', () => {
+                const audioSrc = button.getAttribute(\'data-src\');
+                const title = button.closest(\'tr\').querySelector(\'.music-title\').textContent;
+                const artist = button.closest(\'tr\').querySelector(\'.music-artist\').textContent;
+
+                audioSource.setAttribute(\'src\', audioSrc);
+                audioPlayer.load();
+                audioPlayer.play();
+
+                currentTitle.textContent = title;
+                currentArtist.textContent = artist;
+            });
+        });
+        </script>
+    </div>
+
+    <!-- Bootstrap JS (Popper.js and Bootstrap JS) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->searchMusic()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 02:54:31 --> array_merge(): Argument #2 must be of type array, string given
+in APPPATH\Controllers\MusicController.php on line 170.
+ 1 APPPATH\Controllers\MusicController.php(170): array_merge([...], '<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Music Player</h1>
+
+        <!-- Upload Music Button -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uploadMusicModal">
+            Upload Music
+        </button>
+
+        <!-- Modal for Uploading Music -->
+        <div class="modal fade" id="uploadMusicModal" tabindex="-1" role="dialog" aria-labelledby="uploadMusicModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="uploadMusicModalLabel">Upload Music</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Music Upload Form -->
+                        <form action="music/uploadMusic" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="title">Title:</label>
+                                <input type="text" class="form-control" id="title" name="title" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="artist">Artist:</label>
+                                <input type="text" class="form-control" id="artist" name="artist" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="file_path">Select Music File:</label>
+                                <input type="file" class="form-control" id="music_path" name="music_path" accept=".mp3" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Upload</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Playlist Button -->
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#createPlaylistModal">
+            Create Playlist
+        </button>
+
+        <!-- Modal for Creating Playlist -->
+        <div class="modal fade" id="createPlaylistModal" tabindex="-1" role="dialog" aria-labelledby="createPlaylistModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="createPlaylistModalLabel">Create Playlist</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Playlist Creation Form -->
+                        <form action="music/createPlaylist" method="post">
+                            <div class="form-group">
+                                <label for="playlistName">Playlist Name:</label>
+                                <input type="text" class="form-control" id="playlistName" name="playlistName" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Create Playlist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Music to Playlist Button -->
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#addMusicToPlaylistModal">
+            Add Music to Playlist
+        </button>
+
+        <!-- Modal for Adding Music to Playlist -->
+        <div class="modal fade" id="addMusicToPlaylistModal" tabindex="-1" role="dialog" aria-labelledby="addMusicToPlaylistModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addMusicToPlaylistModalLabel">Add Music to Playlist</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Form for Adding Music to Playlist -->
+                        <form action="music/addMusicToPlaylist" method="post">
+                            <div class="form-group">
+                                <label for="playlistId">Select Playlist:</label>
+                                <select class="form-control" id="playlistId" name="playlistId" required>
+                                    <!-- Populate this with playlist options -->
+                                                                                                                <option value="1">Wasak</option>
+                                                                            <option value="2">Wasak_2</option>
+                                                                            <option value="3">Wasak_3</option>
+                                                                            <option value="4">Wasak_4</option>
+                                                                            <option value="5">Sayawan</option>
+                                                                            <option value="6">Sayawan_2</option>
+                                                                                                        </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="musicId">Select Music:</label>
+                                <select class="form-control" id="musicId" name="musicId" required>
+                                    <!-- Populate this with music options -->
+                                                                        </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Add to Playlist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Playlists Table -->
+<table border="2">
+    <thead>
+        <tr>
+            <th>Playlist Name</th>
+            <th>Audio Title</th>
+            <th>Audio Artist</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+                                                                                                            <tr>
+                                <td>Wasak</td>
+                                <td class="music-title">Roar</td>
+                                <td class="music-artist">Katy Perry</td>
+                                <td>
+                                    <button class="btn btn-primary playButton" data-src="http://localhost:8080/uploads/1695693943_27618ed287c022ffa8b2.mp3">Play</button>
+                                    <a href="delete_music.php?id=1" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                                                                                                <tr>
+                                <td>Wasak</td>
+                                <td class="music-title">Best Day of My Life</td>
+                                <td class="music-artist">American Authors</td>
+                                <td>
+                                    <button class="btn btn-primary playButton" data-src="http://localhost:8080/uploads/1695694067_5197eecb12c072f87320.mp3">Play</button>
+                                    <a href="delete_music.php?id=2" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <tr>
+                                <td>Wasak_2</td>
+                                <td class="music-title">Roar</td>
+                                <td class="music-artist">Katy Perry</td>
+                                <td>
+                                    <button class="btn btn-primary playButton" data-src="http://localhost:8080/uploads/1695693943_27618ed287c022ffa8b2.mp3">Play</button>
+                                    <a href="delete_music.php?id=1" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                                                                                                <tr>
+                                <td>Wasak_2</td>
+                                <td class="music-title">Best Day of My Life</td>
+                                <td class="music-artist">American Authors</td>
+                                <td>
+                                    <button class="btn btn-primary playButton" data-src="http://localhost:8080/uploads/1695694067_5197eecb12c072f87320.mp3">Play</button>
+                                    <a href="delete_music.php?id=2" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <tr>
+                                <td>Wasak_3</td>
+                                <td class="music-title">Count On Me</td>
+                                <td class="music-artist">Bruno Mars</td>
+                                <td>
+                                    <button class="btn btn-primary playButton" data-src="http://localhost:8080/uploads/1695694154_dd5dba58fadfa05f86a5.mp3">Play</button>
+                                    <a href="delete_music.php?id=3" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                                                                                                <tr>
+                                <td>Wasak_3</td>
+                                <td class="music-title">Best Day of My Life</td>
+                                <td class="music-artist">American Authors</td>
+                                <td>
+                                    <button class="btn btn-primary playButton" data-src="http://localhost:8080/uploads/1695694067_5197eecb12c072f87320.mp3">Play</button>
+                                    <a href="delete_music.php?id=2" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <tr>
+                                <td>Wasak_4</td>
+                                <td class="music-title">Hall of Fame</td>
+                                <td class="music-artist">The Script</td>
+                                <td>
+                                    <button class="btn btn-primary playButton" data-src="http://localhost:8080/uploads/1695694268_07403fdf15f3ab181a5e.mp3">Play</button>
+                                    <a href="delete_music.php?id=4" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <tr>
+                                <td>Sayawan</td>
+                                <td class="music-title">Happy</td>
+                                <td class="music-artist">Pharrell Williams</td>
+                                <td>
+                                    <button class="btn btn-primary playButton" data-src="http://localhost:8080/uploads/1695695492_70ac9e0b02c71f94565c.mp3">Play</button>
+                                    <a href="delete_music.php?id=5" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </tbody>
+</table>
+
+
+
+
+
+
+        <!-- Search Music Form -->
+        <form action="/music/searchMusic" method="post">
+            <div class="form-group">
+                <label for="searchTerm">Search Music:</label>
+                <input type="text" class="form-control" id="searchTerm" name="searchTerm" placeholder="Enter title or artist">
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+
+        <!-- Display Search Results -->
+        
+        <!-- Audio Player -->
+        <div>
+            <p>Now Playing:</p>
+            <p><span id="currentTitle"></span> by <span id="currentArtist"></span></p>
+            <audio id="audioPlayer" controls>
+                <source src="" type="audio/mpeg" id="audioSource">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <script>
+            // JavaScript to handle audio playback
+            const audioPlayer = document.getElementById(\'audioPlayer\');
+            const audioSource = document.getElementById(\'audioSource\');
+            const playButtons = document.querySelectorAll(\'.playButton\');
+            const currentTitle = document.getElementById(\'currentTitle\');
+            const currentArtist = document.getElementById(\'currentArtist\');
+
+            playButtons.forEach(button => {
+            button.addEventListener(\'click\', () => {
+                const audioSrc = button.getAttribute(\'data-src\');
+                const title = button.closest(\'tr\').querySelector(\'.music-title\').textContent;
+                const artist = button.closest(\'tr\').querySelector(\'.music-artist\').textContent;
+
+                audioSource.setAttribute(\'src\', audioSrc);
+                audioPlayer.load();
+                audioPlayer.play();
+
+                currentTitle.textContent = title;
+                currentArtist.textContent = artist;
+            });
+        });
+        </script>
+    </div>
+
+    <!-- Bootstrap JS (Popper.js and Bootstrap JS) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->searchMusic()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 03:41:13 --> Undefined array key "id"
+in APPPATH\Views\music.php on line 115.
+ 1 APPPATH\Views\music.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 115)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(44): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 03:41:14 --> Undefined array key "id"
+in APPPATH\Views\music.php on line 115.
+ 1 APPPATH\Views\music.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 115)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(44): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 03:41:45 --> Undefined array key "id"
+in APPPATH\Views\music.php on line 115.
+ 1 APPPATH\Views\music.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 115)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(44): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 03:43:48 --> Undefined array key "music"
+in APPPATH\Views\music.php on line 115.
+ 1 APPPATH\Views\music.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "music"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 115)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(44): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 03:44:27 --> Undefined array key "id"
+in APPPATH\Views\music.php on line 115.
+ 1 APPPATH\Views\music.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 115)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(44): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 03:44:49 --> Undefined array key "id"
+in APPPATH\Views\music.php on line 114.
+ 1 APPPATH\Views\music.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 114)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(44): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 03:51:04 --> Undefined array key "id"
+in APPPATH\Views\music.php on line 116.
+ 1 APPPATH\Views\music.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 116)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(44): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 04:04:57 --> Undefined variable $music
+in APPPATH\Views\music.php on line 114.
+ 1 APPPATH\Views\music.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $music', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 114)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(43): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 04:16:09 --> Undefined array key "id"
+in APPPATH\Views\music.php on line 116.
+ 1 APPPATH\Views\music.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 116)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(44): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 04:16:10 --> Undefined array key "id"
+in APPPATH\Views\music.php on line 116.
+ 1 APPPATH\Views\music.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 116)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(44): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 04:18:28 --> Undefined array key "$music"
+in APPPATH\Views\music.php on line 116.
+ 1 APPPATH\Views\music.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "$music"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 116)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(44): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-27 04:18:40 --> Undefined array key "$musiko"
+in APPPATH\Views\music.php on line 116.
+ 1 APPPATH\Views\music.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "$musiko"', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 116)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(44): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')

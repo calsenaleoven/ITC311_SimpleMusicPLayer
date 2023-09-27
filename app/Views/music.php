@@ -39,7 +39,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="file_path">Select Music File:</label>
-                                <input type="file" class="form-control" id="file_path" name="file_path" accept=".mp3" required>
+                                <input type="file" class="form-control" id="music_path" name="music_path" accept=".mp3" required>
                             </div>
                             <button type="submit" class="btn btn-primary">Upload</button>
                         </form>
@@ -99,79 +99,68 @@
                                 <label for="playlistId">Select Playlist:</label>
                                 <select class="form-control" id="playlistId" name="playlistId" required>
                                     <!-- Populate this with playlist options -->
-                                    <?php foreach ($playlists as $playlist): ?>
-                                        <option value="<?= $playlist['id'] ?>"><?= $playlist['name'] ?></option>
-                                    <?php endforeach; ?>
+                                    <?php if(isset ($playlists)): ?>
+                                        <?php foreach ($playlists as $playlist): ?>
+                                            <option value="<?= $playlist['id'] ?>"><?= $playlist['name'] ?></option>
+                                        <?php endforeach; ?>
+                                    <?php endif; ?>
                                 </select>
                             </div>
+
                             <div class="form-group">
                                 <label for="musicId">Select Music:</label>
                                 <select class="form-control" id="musicId" name="musicId" required>
                                     <!-- Populate this with music options -->
-                                    <?php if (isset($music)): ?>
-                                        <?php foreach ($music as $track): ?>
-                                            <option value="<?= $track['id'] ?>"><?= $track['title'] ?></option>
+                                    <?php if(isset ($musiko)): ?>
+                                        <?php foreach ($musiko as $track): ?>
+                                            <option value="<?= isset($track['id']) ? $track['id'] : '' ?>"><?= isset($track['title']) ? $track['title'] : '' ?></option>
                                         <?php endforeach; ?>
                                     <?php endif; ?>
-
                                 </select>
                             </div>
-                            <button type="submit" class="btn btn-primary">Add to Playlist</button>
+
+                            <button type="submit" class="btn btn-primary">Add Music to Playlist</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Remove Music from Playlist Button -->
-        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#removeMusicFromPlaylistModal">
-            Remove Music from Playlist
-        </button>
-
-        <!-- Modal for Removing Music from Playlist -->
-        <div class="modal fade" id="removeMusicFromPlaylistModal" tabindex="-1" role="dialog" aria-labelledby="removeMusicFromPlaylistModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="removeMusicFromPlaylistModalLabel">Remove Music from Playlist</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Form for Removing Music from Playlist -->
-                        <form action="/music/removeMusicFromPlaylist" method="post">
-                            <div class="form-group">
-                                <label for="playlistIdRemove">Select Playlist:</label>
-                                <select class="form-control" id="playlistIdRemove" name="playlistId" required>
-                                    <!-- Populate this with playlist options -->
-                                    <?php foreach ($playlists as $playlist): ?>
-                                        <option value="<?= $playlist['id'] ?>"><?= $playlist['name'] ?></option>
-                                    <?php endforeach; ?>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="musicIdRemove">Select Music to Remove:</label>
-                                <select class="form-control" id="musicIdRemove" name="musicId" required>
-                                    <!-- Populate this with music options -->
-                                    <?php if (isset($music) && is_array($music)): ?>
-                                        <?php foreach ($music as $track): ?>
-                                            <option value="<?= $track['id'] ?>"><?= $track['title'] ?></option>
-                                        <?php endforeach; ?>
-                                    <?php else: ?>
-                                        <option value="">No music available</option>
-                                    <?php endif; ?>
-                                </select>
-                            </div>
-                            <button type="submit" class="btn btn-danger">Remove from Playlist</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Playlists Table -->
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Playlist Name</th>
+                    <th>Audio Title</th>
+                    <th>Audio Artist</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php if(isset ($playlists)): ?>
+                    <?php foreach ($playlists as $playlist): ?>
+                        <?php if(isset ($audios)): ?>
+                            <?php foreach ($audios as $audio): ?>
+                                <?php if($audio['playlist']['id'] == $playlist['id']): ?>
+                                    <tr>
+                                        <td><?= $playlist['name'] ?></td>
+                                        <td class="music-title"><?= isset($audio['music']['title']) ? $audio['music']['title'] : '' ?></td>
+                                        <td class="music-artist"><?= isset ($audio['music']['artist']) ? $audio['music']['artist'] : '' ?></td>
+                                        <td>
+                                            <button class="btn btn-primary playButton" data-src="<?= base_url($audio['music']['file_path']) ?>">Play</button>
+                                            <a href="/music/deleteMusicFromPlaylist?musicId=<?= $audio['music']['id'] ?>&playlistId=<?= $playlist['id'] ?>" class="btn btn-danger">Delete</a>
+                                        </td>
+                                    </tr>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                <?php endif; ?>
+            </tbody>
+        </table>
 
         <!-- Search Music Form -->
-        <form action="/music/searchMusic" method="post">
+        <form action="music/searchMusic" method="post">
             <div class="form-group">
                 <label for="searchTerm">Search Music:</label>
                 <input type="text" class="form-control" id="searchTerm" name="searchTerm" placeholder="Enter title or artist">
@@ -206,15 +195,24 @@
             // JavaScript to handle audio playback
             const audioPlayer = document.getElementById('audioPlayer');
             const audioSource = document.getElementById('audioSource');
-            const playButtons = document.querySelectorAll('.playButton');
             const currentTitle = document.getElementById('currentTitle');
             const currentArtist = document.getElementById('currentArtist');
 
-            playButtons.forEach(button => {
-                button.addEventListener('click', () => {
+            // Attach the click event listener to the document and specify '.playButton' as the selector
+            document.addEventListener('click', (event) => {
+                if (event.target.matches('.playButton')) {
+                    const button = event.target;
                     const audioSrc = button.getAttribute('data-src');
-                    const title = button.parentElement.querySelector('.music-title').textContent;
-                    const artist = button.parentElement.querySelector('.music-artist').textContent;
+                    let title, artist;
+
+                    // Check if the play button is inside a tr or li element
+                    if (button.closest('tr')) {
+                        title = button.closest('tr').querySelector('.music-title').textContent;
+                        artist = button.closest('tr').querySelector('.music-artist').textContent;
+                    } else if (button.closest('li')) {
+                        title = button.closest('li').querySelector('.music-title').textContent;
+                        artist = button.closest('li').querySelector('.music-artist').textContent;
+                    }
 
                     audioSource.setAttribute('src', audioSrc);
                     audioPlayer.load();
@@ -222,7 +220,7 @@
 
                     currentTitle.textContent = title;
                     currentArtist.textContent = artist;
-                });
+                }
             });
         </script>
     </div>

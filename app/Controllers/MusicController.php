@@ -14,12 +14,52 @@ class MusicController extends BaseController
 
     public function index()
     {
-        // Retrieve playlist data from the database (replace this with your actual playlist retrieval logic)
+        $data['musiko'] = $this->musicModel->findAll();
+        // Retrieve all playlist data from the database
         $playlistData = $this->playlistModel->findAll();
 
-        // Load the view and pass the playlist data
-        return view('music', ['playlists' => $playlistData]);
+        // Initialize an array to store the structured audio data
+        $audios = [];
+
+        // Loop through each playlist
+        foreach ($playlistData as $playlist) {
+            $playlistId = $playlist['id'];
+
+            // Retrieve music data for the current playlist
+            $musicData = $this->playlistMusicModel->where('playlist_id', $playlistId)->findAll();
+
+            foreach ($musicData as $music) {
+            $musicId = $this->playlistMusicModel->where('music_id', $music['music_id'])->first();
+            $musicDetails = $this->musicModel->find($musicId['music_id']);
+
+                $audios[] = [
+                    'music' => $musicDetails,
+                    'playlist' => $playlist,
+                ];
+            }
+            
+        }
+
+            // Load the view and pass the playlist and audio data
+            return view('music', ['playlists' => $playlistData, 'audios' => $audios, 'musiko' => $data]);
     }
+
+
+    // Helper function to check if an audio is in a playlist
+    private function isAudioInPlaylist($audioId, $playlistId)
+    {
+        $playlistMusicModel = new PlaylistMusicModel();
+
+        // Check if there's a record in the playlist_music table with the given audio and playlist IDs
+        $record = $playlistMusicModel->where('music_id', $audioId)
+                                     ->where('playlist_id', $playlistId)
+                                     ->first();
+
+        return $record !== null;
+    }
+
+
+
 
     public function __construct()
     {
@@ -31,27 +71,26 @@ class MusicController extends BaseController
 
     // Handle music upload
     public function uploadMusic()
-    {
-        $musicFile = $this->request->getFile('file_path');
+      {
 
-        if ($musicFile->isValid() && !$musicFile->hasMoved()) {
-            $newName = $musicFile->getRandomName();
-            $musicFile->move(ROOTPATH . 'public/uploads', $newName);
+        $musicFile = $this->request->getFile('music_path');
+          if ($musicFile->isValid() && !$musicFile->hasMoved()) {
+              $newName = $musicFile->getRandomName();
+              $musicFile->move(ROOTPATH . 'public/uploads', $newName);
 
-            // Store the file path in the database
-            $data = [
-                'title' => $this->request->getPost('title'),
-                'artist' => $this->request->getPost('artist'),
-                'file_path' => 'uploads/' . $newName
-            ];
+              // Store the file path in the database
+              $data = [
+                  'title' => $this->request->getPost('title'),
+                  'artist' => $this->request->getPost('artist'),
+                  'file_path' => 'uploads/' . $newName
+              ];
 
-            $this->musicModel->insert($data);
+              $this->musicModel->insert($data);
 
-            return redirect()->to('music')->with('success', 'Music uploaded successfully.');
-        } else {
-            return redirect()->to('music')->with('error', 'Invalid music file.');
+              return redirect()->to('/')->with('success', 'Music uploaded successfully.');
+          }
         }
-    }
+
 
 
     // Handle playlist creation
@@ -66,9 +105,9 @@ class MusicController extends BaseController
 
             $this->playlistModel->insert($data);
 
-            return redirect()->to('music')->with('success', 'Playlist created successfully.');
+            return redirect()->to('/')->with('success', 'Playlist created successfully.');
         } else {
-            return redirect()->to('music')->with('error', 'Playlist name cannot be empty.');
+            return redirect()->to('/')->with('error', 'Playlist name cannot be empty.');
         }
     }
 
@@ -88,35 +127,58 @@ class MusicController extends BaseController
             // Insert the association in the playlist_music table
             $this->playlistMusicModel->insert($data);
 
-            return redirect()->to('/music')->with('success', 'Music added to the playlist successfully.');
+            return redirect()->to('/')->with('success', 'Music added to the playlist successfully.');
         } else {
-            return redirect()->to('/music')->with('error', 'Please select a playlist and a music.');
+            return redirect()->to('/')->with('error', 'Please select a playlist and a music.');
         }
     }
 
 
     // Handle removing music from a playlist
-    public function removeMusicFromPlaylist()
+    public function deleteMusicFromPlaylist()
     {
-        $playlistId = $this->request->getPost('playlistId');
-        $musicId = $this->request->getPost('musicId');
+        $musicId = $this->request->getGet('musicId');
+        $playlistId = $this->request->getGet('playlistId');
 
-        if (!empty($playlistId) && !empty($musicId)) {
-            // Delete the association from the playlist_music table
-            $this->playlistMusicModel->where('playlist_id', $playlistId)
-                ->where('music_id', $musicId)
-                ->delete();
+        if (!empty($musicId) && !empty($playlistId)) {
+            // Delete the association in the playlist_music table
+            $this->playlistMusicModel->where('music_id', $musicId)->where('playlist_id', $playlistId)->delete();
 
-            return redirect()->to('/music')->with('success', 'Music removed from the playlist successfully.');
+            return redirect()->to('/')->with('message', 'Music removed from playlist successfully.');
         } else {
-            return redirect()->to('/music')->with('error', 'Please select a playlist and a music.');
+            return redirect()->to('/')->with('error', 'Invalid music or playlist ID.');
         }
-    }
+    }   
 
 
     // Handle music search
     public function searchMusic()
     {
+        // Retrieve all playlist data from the database
+        $playlistData = $this->playlistModel->findAll();
+
+        // Initialize an array to store the structured audio data
+        $audios = [];
+
+        // Loop through each playlist
+        foreach ($playlistData as $playlist) {
+            $playlistId = $playlist['id'];
+
+            // Retrieve music data for the current playlist
+            $musicData = $this->playlistMusicModel->where('playlist_id', $playlistId)->findAll();
+
+            foreach ($musicData as $music) {
+            $musicId = $this->playlistMusicModel->where('music_id', $music['music_id'])->first();
+            $musicDetails = $this->musicModel->find($musicId['music_id']);
+
+                $audios[] = [
+                    'music' => $musicDetails,
+                    'playlist' => $playlist,
+                ];
+            }
+            
+        }
+        
         $searchTerm = $this->request->getPost('searchTerm');
 
         if (!empty($searchTerm)) {
@@ -127,10 +189,23 @@ class MusicController extends BaseController
                 ->findAll();
 
             // Load the view and pass the search results
-            return view('music', ['music' => $musicData, 'searchTerm' => $searchTerm]);
+            return view('music', ['music' => $musicData, 'searchTerm' => $searchTerm, 'playlists' => $playlistData, 'audios' => $audios]);
         } else {
-            return redirect()->to('/music')->with('error', 'Please enter a search term.');
+            return redirect()->to('/')->with('error', 'Please enter a search term.');
         }
     }
+
+    public function getMusicForPlaylist()
+    {
+        $playlistId = $this->request->getGet('playlistId');  // Get the playlist ID from the query parameter
+
+        // Fetch music options for the specified playlist from your database
+        // Assuming you have a method to fetch music for the playlist ID
+        $musicForPlaylist = $this->playlistMusicModel->getMusicForPlaylist($playlistId);
+
+        // Return the music options as JSON
+        return $this->response->setJSON($musicForPlaylist);
+    }
+
 
 }

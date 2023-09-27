@@ -13,12 +13,30 @@ class PlaylistMusicModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields;
+    protected $allowedFields    = ['playlist_id', 'music_id'];
 
-    public function __construct()
+    public function getMusicForPlaylist($playlistId)
     {
-        parent::__construct();
-        $this->allowedFields = ['playlist_id', 'music_id'];
+        // Load the MusicModel
+        $musicModel = new MusicModel();
+
+        // Fetch music associated with the playlist
+        $query = $this->select('music_id')
+            ->where('playlist_id', $playlistId)
+            ->findAll();
+
+        $musicIds = array_column($query, 'music_id');
+
+        // Fetch music details for the retrieved music IDs
+        $musicDetails = [];
+        foreach ($musicIds as $musicId) {
+            $music = $musicModel->find($musicId);
+            if ($music) {
+                $musicDetails[] = $music;
+            }
+        }
+
+        return $musicDetails;
     }
 
     // Dates
