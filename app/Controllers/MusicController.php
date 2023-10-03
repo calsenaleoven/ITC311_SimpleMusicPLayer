@@ -37,7 +37,7 @@ class MusicController extends BaseController
                     'playlist' => $playlist,
                 ];
             }
-            
+
         }
 
             // Load the view and pass the playlist and audio data
@@ -127,9 +127,9 @@ class MusicController extends BaseController
             // Insert the association in the playlist_music table
             $this->playlistMusicModel->insert($data);
 
-            return redirect()->to('/')->with('success', 'Music added to the playlist successfully.');
+            return $this->response->setJSON(['message' => 'Music added to playlist successfully']);
         } else {
-            return redirect()->to('/')->with('error', 'Please select a playlist and a music.');
+            return $this->response->setJSON(['error' => 'Please select a playlist and a music.']);
         }
     }
 
@@ -148,7 +148,7 @@ class MusicController extends BaseController
         } else {
             return redirect()->to('/')->with('error', 'Invalid music or playlist ID.');
         }
-    }   
+    }
 
 
     // Handle music search
@@ -176,9 +176,9 @@ class MusicController extends BaseController
                     'playlist' => $playlist,
                 ];
             }
-            
+
         }
-        
+
         $searchTerm = $this->request->getPost('searchTerm');
 
         if (!empty($searchTerm)) {
@@ -195,16 +195,27 @@ class MusicController extends BaseController
         }
     }
 
-    public function getMusicForPlaylist()
+    public function getMusicFromPlaylist()
     {
-        $playlistId = $this->request->getGet('playlistId');  // Get the playlist ID from the query parameter
+        $playlistId = $this->request->getGet('playlistId');
 
-        // Fetch music options for the specified playlist from your database
-        // Assuming you have a method to fetch music for the playlist ID
-        $musicForPlaylist = $this->playlistMusicModel->getMusicForPlaylist($playlistId);
+        // Retrieve music data for the selected playlist
+        $musicData = $this->playlistMusicModel->where('playlist_id', $playlistId)->findAll();
 
-        // Return the music options as JSON
-        return $this->response->setJSON($musicForPlaylist);
+        // Retrieve the details of each music
+        $audios = [];
+        foreach ($musicData as $music) {
+            $musicId = $music['music_id'];
+            $musicDetails = $this->musicModel->find($musicId);
+
+            $audios[] = [
+                'music' => $musicDetails,
+                'playlist' => $playlistId,
+            ];
+        }
+
+        // Return the music data as JSON response
+        return $this->response->setJSON($audios);
     }
 
 

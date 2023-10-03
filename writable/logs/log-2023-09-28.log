@@ -1,0 +1,42 @@
+CRITICAL - 2023-09-28 04:09:09 --> syntax error, unexpected token "endif", expecting end of file
+in APPPATH\Views\music.php on line 131.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 3 APPPATH\Controllers\MusicController.php(44): view('music', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-28 04:10:18 --> syntax error, unexpected token "endif", expecting end of file
+in APPPATH\Views\music.php on line 131.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 3 APPPATH\Controllers\MusicController.php(44): view('music', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-28 04:10:25 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\music.php on line 132.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 3 APPPATH\Controllers\MusicController.php(44): view('music', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')
+CRITICAL - 2023-09-28 04:10:33 --> Undefined variable $audio
+in APPPATH\Views\music.php on line 127.
+ 1 APPPATH\Views\music.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $audio', 'D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php', 127)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\SimpleMusicPlayer\\app\\Views\\music.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('music', [], true)
+ 5 APPPATH\Controllers\MusicController.php(44): view('music', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laragon\\www\\SimpleMusicPlayer\\public\\index.php')

@@ -77,53 +77,127 @@
             </div>
         </div>
 
-        <!-- Add Music to Playlist Button -->
+        <!-- My Playlist Button -->
         <button type="button" class="btn btn-info" data-toggle="modal" data-target="#addMusicToPlaylistModal">
-            Add Music to Playlist
+            My Playlist
         </button>
 
-        <!-- Modal for Adding Music to Playlist -->
+        <!-- Modal for My Playlist -->
         <div class="modal fade" id="addMusicToPlaylistModal" tabindex="-1" role="dialog" aria-labelledby="addMusicToPlaylistModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="addMusicToPlaylistModalLabel">Add Music to Playlist</h5>
+                        <h5 class="modal-title" id="addMusicToPlaylistModalLabel">My Playlist</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <!-- Form for Adding Music to Playlist -->
-                        <form action="/music/addMusicToPlaylist" method="post">
+                        <!-- Form for My Playlist -->
+                        <form id="playlistForm">
                             <div class="form-group">
                                 <label for="playlistId">Select Playlist:</label>
                                 <select class="form-control" id="playlistId" name="playlistId" required>
                                     <!-- Populate this with playlist options -->
-                                    <?php if(isset ($playlists)): ?>
-                                        <?php foreach ($playlists as $playlist): ?>
+                                    <?php if(isset($playlists)): ?>
+                                        <?php foreach($playlists as $playlist): ?>
                                             <option value="<?= $playlist['id'] ?>"><?= $playlist['name'] ?></option>
                                         <?php endforeach; ?>
                                     <?php endif; ?>
                                 </select>
                             </div>
-
-                            <div class="form-group">
-                                <label for="musicId">Select Music:</label>
-                                <select class="form-control" id="musicId" name="musicId" required>
-                                    <!-- Populate this with music options -->
-                                    <?php if(isset ($musiko)): ?>
-                                        <?php foreach ($musiko as $track): ?>
-                                            <option value="<?= isset($track['id']) ? $track['id'] : '' ?>"><?= isset($track['title']) ? $track['title'] : '' ?></option>
-                                        <?php endforeach; ?>
-                                    <?php endif; ?>
-                                </select>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary">Add Music to Playlist</button>
                         </form>
+
+                        <!-- "Show Music" button -->
+                        <button type="button" class="btn btn-info" id="showMusicButton">Show Music</button>
+
+                        <!-- Playlists Table -->
+                        <?php if(isset($playlists)): ?>
+                            <?php foreach($playlists as $playlist): ?>
+                                <table border="2" id="playlistTable-<?= $playlist['id'] ?>" class="playlist-table" style="display: none;">
+                                    <thead>
+                                        <tr>
+                                            <th>Audio Title</th>
+                                            <th>Audio Artist</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php if(isset($audios)): ?>
+                                            <?php foreach($audios as $audio): ?>
+                                                <?php if($audio['playlist']['id'] == $playlist['id']): ?>
+                                                    <tr>
+                                                        <td class="music-title"><?= isset($audio['music']['title']) ? $audio['music']['title'] : '' ?></td>
+                                                        <td class="music-artist"><?= isset($audio['music']['artist']) ? $audio['music']['artist'] : '' ?></td>
+                                                        <td>
+                                                            <button class="btn btn-primary playButton" data-src="<?= base_url($audio['music']['file_path']) ?>">Play</button>
+                                                            <a href="/music/deleteMusicFromPlaylist?musicId=<?= $audio['music']['id'] ?>&playlistId=<?= $playlist['id'] ?>" class="btn btn-danger">Delete</a>
+                                                        </td>
+                                                    </tr>
+                                                <?php endif; ?>
+                                            <?php endforeach; ?>
+                                        <?php endif; ?>
+                                    </tbody>
+                                </table>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+
                     </div>
                 </div>
             </div>
+        </div>
+
+        <script>
+            // Function to handle displaying music for the selected playlist
+            function showMusicForPlaylist() {
+                const selectedPlaylistId = document.getElementById('playlistId').value;
+
+                // Hide all playlists initially
+                const playlistTables = document.querySelectorAll('.playlist-table');
+                playlistTables.forEach(table => table.style.display = 'none');
+
+                // Display the table for the selected playlist
+                const selectedPlaylistTable = document.getElementById(`playlistTable-${selectedPlaylistId}`);
+                if (selectedPlaylistTable) {
+                    selectedPlaylistTable.style.display = 'block';
+                }
+            }
+
+            // Add an event listener to the "Show Music" button
+            document.getElementById('showMusicButton').addEventListener('click', showMusicForPlaylist);
+        </script>
+
+        <!-- Search Music Form -->
+        <form action="/" method="post">
+            <div class="form-group">
+                <label for="searchTerm">Search Music:</label>
+                <input type="text" class="form-control" id="searchTerm" name="searchTerm" placeholder="Enter title or artist">
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+
+        <!-- Display Search Results -->
+        <?php if (isset($searchTerm) && isset($music)): ?>
+            <h3>Search Results for: <?= $searchTerm ?></h3>
+            <ul>
+                <?php foreach ($music as $track): ?>
+                    <li>
+                        <span class="music-title"><?= $track['title'] ?></span> by <span class="music-artist"><?= $track['artist'] ?></span>
+                        <button class="btn btn-primary playButton" data-src="<?= base_url($track['file_path']) ?>">Play</button>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        <?php endif; ?>
+
+
+        <!-- Audio Player -->
+        <div>
+            <p>Now Playing:</p>
+            <p><span id="currentTitle"></span> by <span id="currentArtist"></span></p>
+            <audio id="audioPlayer" controls>
+                <source src="" type="audio/mpeg" id="audioSource">
+                Your browser does not support the audio element.
+            </audio>
         </div>
 
         <!-- Playlists Table -->
@@ -159,37 +233,7 @@
             </tbody>
         </table>
 
-        <!-- Search Music Form -->
-        <form action="music/searchMusic" method="post">
-            <div class="form-group">
-                <label for="searchTerm">Search Music:</label>
-                <input type="text" class="form-control" id="searchTerm" name="searchTerm" placeholder="Enter title or artist">
-            </div>
-            <button type="submit" class="btn btn-primary">Search</button>
-        </form>
 
-        <!-- Display Search Results -->
-        <?php if (isset($searchTerm) && isset($music)): ?>
-            <h3>Search Results for: <?= $searchTerm ?></h3>
-            <ul>
-                <?php foreach ($music as $track): ?>
-                    <li>
-                        <span class="music-title"><?= $track['title'] ?></span> by <span class="music-artist"><?= $track['artist'] ?></span>
-                        <button class="btn btn-primary playButton" data-src="<?= base_url($track['file_path']) ?>">Play</button>
-                    </li>
-                <?php endforeach; ?>
-            </ul>
-        <?php endif; ?>
-
-        <!-- Audio Player -->
-        <div>
-            <p>Now Playing:</p>
-            <p><span id="currentTitle"></span> by <span id="currentArtist"></span></p>
-            <audio id="audioPlayer" controls>
-                <source src="" type="audio/mpeg" id="audioSource">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
 
         <script>
             // JavaScript to handle audio playback
